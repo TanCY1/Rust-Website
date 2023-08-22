@@ -34,23 +34,23 @@ jobs:
       run: CARGO_TARGET_DIR=`pwd`/target cargo install wasm-pack
 
     - name: NPM install (latest)
-      run: cd tx2-web && npm install npm@latest
+      run: cd rust-website && npm install npm@latest
 
     - name: Run Cargo tests
       run: cargo test --workspace
 
     - name: NPM (including WASM) Build
-      run: cd tx2-web && npm run build
+      run: cd rust-website && npm run build
 
     - name: eslint
-      run: cd tx2-web && npm run lint
+      run: cd rust-website && npm run lint
 
     # Save wasm build so that we can optionally deploy it without rebuilding
     - name: Save wasm dist artifact
       uses: actions/upload-artifact@v3
       with:
-        name: tx2-web-dist
-        path: tx2-web/dist
+        name: rust-website-dist
+        path: rust-website/dist
         if-no-files-found: error
 
   deploy:
@@ -72,7 +72,7 @@ jobs:
     - name: Download wasm dist artifact
       uses: actions/download-artifact@v3
       with:
-        name: tx2-web-dist
+        name: rust-website-dist
         path: dist-for-deploy
 
     - name: Deploy to GitHub Pages
