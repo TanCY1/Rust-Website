@@ -2,7 +2,7 @@ use yew::prelude::*;
 use yew_router::prelude::*;
 
 use crate::components::pages::home::Home;
-use crate::components::pages::NotFound::NotFound;
+use crate::components::pages::notfound::NotFound;
 
 
 #[derive(Debug, Clone, PartialEq, Routable)]
