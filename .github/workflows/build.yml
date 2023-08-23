@@ -36,6 +36,8 @@ jobs:
           run: |
             git add .
             git commit -m "build.yml"
+            git branch -d gh-pages
+            git checkout -b gh-pages
             git push origin gh-pages
 
 
