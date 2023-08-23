@@ -9,8 +9,9 @@ if os.path.isfile(parent_directory+"/index.html"):
         <!DOCTYPE html>
         <html lang="en">
             <head> </head>
-            <body></body>
+            <body style="margin: 0"></body>
         </html>
+
     ''')
 
 

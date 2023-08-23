@@ -1,5 +1,5 @@
 div.yellowbackg {
-    height: 100vh;
+    height: 101vh;
     background-color: #fed43f;
     margin-top: 0;
     width: 99vw;
@@ -10,6 +10,15 @@ div.yellowbackg {
 
 div.whitebackg{
     height:100vh;
+}
+
+.iframe{
+    display:block;
+    text-align: cen ter;
+    margin-top: 12.5vh;
+}
+
+div.list{
     display:flex;
     justify-content:center;
 }
@@ -24,13 +33,15 @@ h1 {
 }
 
 body {
-    margin: 0;
+    margin: 0px;
     position: relative;
     height: 100%;
-    margin-top: 0%;
+    margin-top: 0px;
 }
 
 ul {
     display:inline-block;
     font-size:2vh;
+    margin-top:0;
+    margin-right:2vw;
 }
