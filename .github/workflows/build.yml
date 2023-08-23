@@ -36,7 +36,6 @@ jobs:
           run: |
             git add .
             git commit -m "build.yml"
-            git remote add origin https://github.com/TanCY1/Rust-Website.git
             git push origin gh-pages
 
 
