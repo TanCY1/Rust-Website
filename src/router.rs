@@ -7,10 +7,10 @@ use crate::components::pages::NotFound::NotFound;
 
 #[derive(Debug, Clone, PartialEq, Routable)]
 pub enum Route {
-    #[at("/")]
+    #[at("/Rust-Website")]
     Home,
     #[not_found]
-    #[at("/404")]
+    #[at("/Rust-Website/404")]
     NotFound,
 }
 
