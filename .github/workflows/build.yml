@@ -14,6 +14,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         - uses: actions/checkout@v3
+        - name: set up rust
+          uses: actions-rust-lang/setup-rust-toolchain@v1
+          with:
+            target: wasm32-unknown-unknown  
+            toolchain: stable  
         - name: set up trunk
           uses: jetli/trunk-action@v0.4.0
           with:
