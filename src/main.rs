@@ -1,7 +1,7 @@
 mod components;
 mod router;
 use crate::router::{switch, Route};
-use stylist::{yew::styled_component, Style};
+use stylist::{yew::styled_component};
 use yew::prelude::*;
 use yew_router::prelude::*;
 use yew_router::Switch;

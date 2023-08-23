@@ -1,5 +1,5 @@
 use yew::prelude::*;
-use stylist::{yew::styled_component, Style};
+use stylist::{Style};
 const STYLE_FILE: &str = include_str!("../../style.css");
 
 
