@@ -30,8 +30,8 @@ jobs:
         - name: set up python
           uses: actions/setup-python@v4
           with: 
-                python-version: '3.10' 
-        - run: python .github/workflows/fix.py
+                python-version: '3.11.4' 
+        - run: python .github/workflows/build.py
         - name: commit and push
           run: |
             git add .
