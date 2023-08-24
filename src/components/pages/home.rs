@@ -16,7 +16,7 @@ pub fn home() -> Html {
 
         <div class="yellowbackg">
             <h1 style="text-align:center;">{ "The Rust Programming Language" }</h1>
-            <img src="https://trunkrs.dev/rustacean-flat-happy.svg" style="display:block; width:50%; margin-left:auto; margin-right:auto;"/>
+            <img src="https://trunkrs.dev/rustacean-flat-happy.svg" style="display:block; width:50vw; margin-left:auto; max-height:75vh;    margin-right:auto;"/>
         </div>
 
         <div class="whitebackg">
