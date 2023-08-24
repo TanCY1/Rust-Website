@@ -27,7 +27,7 @@ pub fn home() -> Html {
           " src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/1024px-Rust_programming_language_black_logo.svg.png"/>
         </div>
         <div class="iframe">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/5C_HPTJg5ek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=true></iframe>
+            <iframe src="https://www.youtube.com/embed/5C_HPTJg5ek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=true></iframe>
         </div>
         </div>
     </div>

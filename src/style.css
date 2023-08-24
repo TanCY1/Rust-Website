@@ -12,10 +12,21 @@ div.whitebackg{
     height:100vh;
 }
 
-.iframe{
-    display:block;
+.iframe iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 40%;
     text-align: center;
-    margin-top: 12.5vh;
+    margin-left:30%;
+}
+
+.iframe{
+    margin-top:12.5vh;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
 }
 
 div.list{
