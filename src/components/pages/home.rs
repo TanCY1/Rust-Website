@@ -1,7 +1,6 @@
-use yew::prelude::*;
 use stylist::Style;
+use yew::prelude::*;
 const STYLE_FILE: &str = include_str!("../../style.css");
-
 
 #[function_component(Home)]
 pub fn home() -> Html {
@@ -14,13 +13,14 @@ pub fn home() -> Html {
     let styles = Style::new(STYLE_FILE).unwrap();
     html! {
         <div class={styles}>
-        
+
         <div class="yellowbackg">
             <h1 style="text-align:center;">{ "The Rust Programming Language" }</h1>
             <img src="https://trunkrs.dev/rustacean-flat-happy.svg" style="display:block; width:50%; margin-left:auto; margin-right:auto;"/>
         </div>
-        <h1>{"Benefits of Rust"}</h1>
+
         <div class="whitebackg">
+        <h1>{"Benefits of Rust"}</h1>
         <div class="list">
             <ul>{string_vector_to_html(benefits_of_rust)}</ul>
             <img style="width: 25vh; height: 25vh;
